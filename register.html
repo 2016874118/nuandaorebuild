@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>暖岛注册</title>	
+		<link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />		
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	
+	<body>
+		<header>
+			<section id="topNav" class="t">
+				<section id="navC" class="c">
+					<div id="navLeft" class="l">
+						<div id="nav_logo" class="l">
+							<i class="icons" id="logo"></i>
+						</div>
+				    </div>
+				</section>
+			</section>				
+		</header>
+		<video autoplay="autoplay" muted="muted" loop="loop" style="width: 1366px;">
+			<source src="img/nuandao.m4v" type="video/mp4">					
+		</video>
+		<div id="login_main">
+			<section id="login_left" class="login_lr l">
+				<div id="login_title">中国具有创造力的设计电商</div>
+				<span id="login_Stitle">----让最好的一切发生----</span>
+				<div id="login_welcome">注册就送<span id="login_wel">100元</span>现金券</div>
+				
+		<div id="box">
+			<ul id="picbox">
+				<li class="bigPic"><img src="img/warm/10.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/11.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/12.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/13.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/14.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/15.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/16.jpg" alt="" /></li>
+				<li class="bigPic"><img src="img/warm/17.jpg" alt="" /></li>
+			</ul>			
+		</div>	
+		<div id="login_lb">每日全球设计新品 2折起包邮+赠券特卖</div>
+			</section>
+			<section id="login_right" class="login_lr r">
+			<div id="login_r"><a href="login.html" style="color: gray;">登录</a>|<a>注册</a></div>
+			 <div class="hbottonET">
+			 	        <div id="hbottomEI">
+							<span class="iconfont" style="font-size: 30px;margin-top: 2px;color: gainsboro;">&#xe61b;</span>
+						</div>
+						<input type="text" placeholder="邮箱地址" id="hbottomE" class="btn" style="float: right;"/>		
+						<p id="p4">请输入邮箱</p>
+			 </div>
+			  <div class="hbottonET">
+			 	        <div id="hbottomEI">
+							<span class="iconfont" style="font-size: 30px;margin-top: 2px;color: gainsboro;">&#xe61f;</span>
+						</div>
+						<input type="text" placeholder="暖岛密码" id="hbottomE" class="btn" style="float: right;"/>	
+						<p id="p3">请输入密码</p>	
+			 </div>
+			 <div id="login_forget">忘记密码</div>
+			 <button id="login_ok"><a href="index.html">暖岛注册</a></button>
+			 <button id="login_ok" style="color: red;border: 1px solid red;background: white;font-size: 16px;"><span class="iconfont" style="color: red;font-size: 25px;">&#xe699;</span>&nbsp;&nbsp;微博登录</button>
+			<span id="login_more" class="iconfont">更多  &#xe64f;</span>
+			<span id="login_morePic" class="iconfont">&#xe609;QQ注册  &nbsp;&nbsp;&nbsp;        &#xe622;人人网注册</span>
+			<div id="login_root">注册登录暖岛后，您已同意用户使用条款</div>
+			</section>
+		</div>
+		<div id="login_foot">
+			<section id="login_footl" class="l">
+				<br />
+				<span>使用条款&nbsp;&nbsp; | &nbsp;&nbsp;暖岛APP&nbsp;&nbsp; | &nbsp;&nbsp;友情链接</span><br /><br />
+				<span>Nuandao.com 北京暖岛网络信息科技有限公司 © 2011-2016 All rights reserved 京ICP备13034710号-1 | 京公网安备11010102001819号 | 营业执照编号：102489641</span>
+			</section>
+			<section id="login_footr" class="r">
+				<img src="img/315icon.gif" />
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周一至周五9:30-18:00</span>
+			</section>
+		</div>
+		<script>
+				var oBigPic = document.getElementsByClassName('bigPic');				
+				slider()
+				function slider(){
+					
+					inter ( );
+					
+					var iNow = 0;
+					var timer;							
+					function bind(index2){
+						oPicBtn[index2].onclick = function(){
+							clearInterval(timer);
+							iNow = index2;
+							console.log('dianji'+index2 )
+							changePic( index2 )
+							inter()
+						}
+					}
+					
+					function changePic ( index2 ){						
+						for(var j = 0;j<oBigPic.length;j++){
+							oBigPic[j].style.opacity = 0;
+							if (j==index2) {
+								oBigPic[index2].style.opacity = 1;
+							}
+						}
+					}
+					//定时器 
+					function inter ( ){						
+						timer = setInterval(function(){
+							iNow++;
+							console.log('zidong'+iNow)
+							if( iNow>7 ){
+								iNow = 0
+							}
+							changePic ( iNow )
+						},2000)
+					}
+				}
+				
+				//表单验证
+				$('.btn').blur(function(){
+				//取到input的value值，用.val()
+				var index1 = $('.btn').index(this);
+				var value = $('.btn').eq(index1).val();
+				var reg;
+				switch(index1){				
+					case 0:
+					  reg=/^\d{5,11}@qq.com$/;
+					  break;	
+					case 1:
+					  reg=/^\w{6,12}$/;
+					  break;					  
+				}
+				checked( reg,value,index1 )
+			})
+			
+			function checked( reg,value,index1 ){
+				var resulet = reg.test( value );
+				console.log(value,resulet,reg);
+				if(resulet==false){
+					$('p').eq(index1).css('color','red');
+				}else{
+					$('p').eq(index1).css('color','white');
+				}
+			}
+			
+			var loginmore = document.getElementById('login_more')
+			var loginmoreP = document.getElementById('login_morePic')
+			loginmore.onclick = function(){
+				if(loginmoreP.style.display == "none"){
+					loginmoreP.style.display = "block";
+				} else{
+					loginmoreP.style.display = "none";
+				} 
+			}
+//			loginmore();
+		</script>
+	</body>
+</html>

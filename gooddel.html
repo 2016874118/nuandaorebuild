@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="commoncss/header.css" />
+		<link rel="stylesheet" href="css/gooddel.css" />
+
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+	</head>
+
+	<body>
+		<header></header>
+		<div id="del_top" class="c">
+			<div id="del_topl" class="l">家居创意&nbsp;&nbsp;>&nbsp;&nbsp;文具&nbsp;&nbsp;>&nbsp;&nbsp;其他&nbsp;&nbsp;>&nbsp;&nbsp;Fish Measure</div>
+			<div id="del_topr" class="r">
+				<span class="iconfont l" style="color: gray;font-size: 32px;">&#xe606;</span>
+				<span class="iconfont l" style="color: gray;font-size: 32px;">&#xe609;</span>
+				<span class="iconfont l" style="color: gray;font-size: 32px;">&#xe62e;</span>
+				<span class="iconfont l" style="color: gray;font-size: 32px;">&#xe634;</span>
+				<span class="iconfont l" style="color: gray;font-size: 32px;">&#xe603;</span>
+			</div>
+		</div>
+		
+		<div id="goods_del" class="c">
+			<section id="goods_dell" class="l">
+				<div id="spic">
+					<img src="img/warm/h17.jpg" id="s" />
+					<div id="bpic">
+						<img src="img/warm/h17.jpg" id="b" />
+					</div>
+					<div id="square"></div>
+                   
+				</div>
+				 <!--<ul>
+					<li class="del_btn"><img src="img/warm/h17.jpg" /></li>
+					<li class="del_btn"><img src="img/warm/h18.jpg" /></li>
+					<li class="del_btn"><img src="img/warm/h19.jpg" /></li>
+					<li class="del_btn"><img src="img/warm/h20.jpg" /></li>
+				</ul>-->
+			</section>
+			<section id="goods_delm" class="r">
+				<p>Fish Measure</p>
+				<p>FiiiiiSH</p>
+				<p>￥48</p>
+				<p>品牌：Fiiiiish 品名：Fish Measure（鱼形拉尺） 材质：MBS，PVC 尺寸：W70×H50×D20mm </p>
+
+				<label>系列</label>
+				<div id="delm_p">
+					<img src="img/warm/h18.jpg" />
+					<img src="img/warm/h19.jpg" />
+					<img src="img/warm/h20.jpg" />
+					<img src="img/warm/h21.jpg" />
+					<img src="img/warm/h19.jpg" />
+					<img src="img/warm/h20.jpg" />
+					<img src="img/warm/h21.jpg" />
+				</div>
+				<div id="delm_kunushi">
+					<label>规格</label>
+					<span>ADEYAKKO</span>
+					<span>BUTTERFLYFISH</span>
+					<span>Emperor Angelfi</span>
+					<span id="delm_s">FLAME ANGELFISH</span>
+					<span>KUMANOMI</span>
+				</div>
+				<div id="delm_num" class="l">
+					<label>数量</label>
+					<span class="l num" id="num_mix" onclick="numDec()">-</span>
+					<input id="quantity" value="1" class="l" />
+					<span class="l num" id="num_add" onclick="numAdd()">+</span>
+					<p>
+						<label>总价格</label>
+						<span id="totalPrice">50</span>
+					</p>
+					<input type="hidden" value="50" id="price" />
+
+				</div>
+				<div id="delm_clear"></div>
+				<div delm_buttom class="l">
+					<button class="goto l" id="add_cart_now">立即结算</button>
+					<button class="goto l" id="add_cart">加入购物车</button>
+					<button class="goto l" id="online_chat">在线导购</button>
+				</div>
+				<!--<div id="delm_love" class="l">
+					<p>
+						<span id="love_pic" class="iconfont" style="font-size: 40px;">&#xe608;</span>
+						<!--<div class="delm_lovet" style="font-size: 14px;" >已有15人喜欢</div>-->
+				<!--</p>-->
+
+				<!--</div>-->
+				<!--<div id="delm_del"><span class="iconfont" style="border: none;">&#xe640;</span>该商品参加满249包邮活动</div>-->
+			</section>
+		</div>
+		<div id="del_yl" class="c">很喜欢这个商品？猜你也喜欢</div>
+		<div id="d1" class="c">
+			<img src="img/warm/h1.jpg" />
+			<img src="img/warm/h2.jpg" />
+			<img src="img/warm/h3.jpg" />
+			<img src="img/warm/h9.jpg" />
+			<img src="img/warm/h5.jpg" />
+			<img src="img/warm/h13.jpg" />
+			<img src="img/warm/h7.jpg" />
+			<img src="img/warm/h8.jpg" />
+			<img src="img/warm/h9.jpg" />
+			<img src="img/warm/h10.jpg" />
+			<img src="img/warm/h11.jpg" />
+			<img src="img/warm/h12.jpg" />
+			<img src="img/warm/h13.jpg" />
+			<img src="img/warm/h14.jpg" />
+			<img src="img/warm/h15.jpg" />
+			<img src="img/warm/h16.jpg" />
+			<img src="img/warm/h15.jpg" />
+			<img src="img/warm/h3.jpg" />
+			<img src="img/warm/h4.jpg" />
+			<img src="img/warm/h16.jpg" />
+			<img src="img/warm/h10.jpg" />
+		</div>
+		<div id="del_des">
+			<div id="del_story" class="del_st l">产品故事</div>
+			<div id="del_tips" class="del_st l">岛民评价(0)</div>
+		</div>
+		<div id="del_col">
+			<p style="font-size: 18px;">商品描述：</p><br />
+			<p style="font-size: 13px;">品牌：Fiiiiish 品名：Fish Measure（鱼形拉尺） 材质：MBS，PVC 尺寸：W70×H50×D20mm (拉尺=100cm) 产地：中国</p><br />
+			<ul>
+				<li class="f">货品产地：中国</li>
+				<li class="f">品牌属地：中国</li>
+				<li class="f">颜色： 多种颜色</li>
+				<li class="f">退换政策： 查看详细规则</li>
+				<li class="f">送货时间： 付款后3个工作日内发货</li>
+				<li class="f">尺寸：W70×H50×D20mm (拉尺=100cm)</li>
+			</ul>
+			<img src="img/warm/j1.jpg" />
+			<img src="img/warm/j2.jpg" />
+			<img src="img/warm/j3.jpg" />
+			<img src="img/warm/j4.jpg" />
+			<img src="img/warm/j5.jpg" />
+			<img src="img/warm/j6.jpg" />
+			<img src="img/warm/j7.jpg" />
+			<!--<img src="img/warm/j8.jpg" />-->
+			<img src="img/warm/j9.jpg" />
+			<img src="img/warm/j10.jpg" />
+
+		</div>
+		<div id="e">
+			<p><strong><span style="color: gray;font-size: 40px;">0</span></strong>条评价</p><br /><br /><br />
+			<p>还没有人留下宝贵的评价，购买之后就可以评价喽...</p>
+		</div>
+		<div id="del_yl" class="c">更多商品推荐</div>
+		<div id="d1" class="c">
+			<img src="img/warm/11.jpg" />
+			<img src="img/warm/12.jpg" />
+			<img src="img/warm/13.jpg" />
+			<img src="img/warm/14.jpg" />
+			<img src="img/warm/15.jpg" />
+			<img src="img/warm/16.jpg" />
+			<img src="img/warm/17.jpg" />
+			<img src="img/warm/18.jpg" />
+			<img src="img/warm/19.jpg" />
+			<img src="img/warm/20.jpg" />
+			<img src="img/warm/21.jpg" />
+			<img src="img/warm/22.jpg" />
+			<img src="img/warm/7.jpg" />
+			<img src="img/warm/8.jpg" />
+			<img src="img/warm/9.jpg" />
+			<img src="img/warm/10.jpg" />
+			<img src="img/warm/h2.jpg" />
+			<img src="img/warm/h3.jpg" />
+			<img src="img/warm/h4.jpg" />
+			<img src="img/warm/h10.jpg" />
+			<img src="img/warm/h5.jpg" />
+		</div>
+		<div id="gBox"></div>
+		<div id="backtop">
+			<span class="iconfont" style="color: white;font-size: 35px;text-align: center;line-height: 60px;margin-left: 12px;">&#xe642;</span>
+		</div>
+
+		<div id="hbottom">
+			<div id="hbottomC" class="c">
+				<div id="hbottoml" class="l">
+					<ul>
+						<li class="hbottonT" style="font-size: 18px;">逛逛暖岛</li>
+						<li class="hbottonT" style="font-size: 18px;">订单详情</li>
+						<li class="hbottonT" style="font-size: 18px;">退货换货</li>
+						<li class="hbottonT" style="font-size: 18px;">关于暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">登录注册</li>
+						<li class="hbottonT" style="opacity: 0.8;">查询订单</li>
+						<li class="hbottonT" style="opacity: 0.8;">退换规则</li>
+						<li class="hbottonT" style="opacity: 0.8;">暖岛故事</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+						<li class="hbottonT" style="opacity: 0.8;">逛逛暖岛</li>
+
+					</ul>
+				</div>
+				<div id="hbottomr" class="r">
+					<div style="color: white;font-size: 18px;">订阅电子报</div>
+					<div class="hbottonET">
+						<input type="email" placeholder="请输入邮箱" id="hbottomE" style="float: left;" />
+						<div id="hbottomEI">
+							<span class="iconfont" style="font-size: 30px;margin-top: 2px;color: gainsboro;">&#xe7e5;</span>
+						</div>
+					</div>
+					<div id="hbottomPic">
+						<span class="iconfont" style="color: gray;font-size: 45px;padding-right: 30px;">&#xe606;</span>
+						<span class="iconfont" style="color: gray;font-size: 45px;padding-right: 30px;">&#xe62e;</span>
+						<span class="iconfont" style="color: gray;font-size: 45px;padding-right: 30px;">&#xe634;</span>
+						<span class="iconfont" style="color: gray;font-size: 45px;padding-right: 30px;">&#xe603;</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="htouch">联系客服</div>
+		<div id="login_foot">
+			<section id="login_footl" class="l">
+				<br />
+				<span>使用条款&nbsp;&nbsp; | &nbsp;&nbsp;暖岛APP&nbsp;&nbsp; | &nbsp;&nbsp;友情链接</span><br /><br />
+				<span>Nuandao.com 北京暖岛网络信息科技有限公司 © 2011-2016 All rights reserved 京ICP备13034710号-1 | 京公网安备11010102001819号 | 营业执照编号：102489641</span>
+			</section>
+			<section id="login_footr" class="r">
+				<img src="img/315icon.gif" />
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周一至周五9:30-18:00</span>
+			</section>
+		</div>
+
+		<script>
+			$('header').load("commonHtml/header.html");
+
+			$('#spic').mousemove(function(event) {
+				var nowleft = Math.floor(event.pageX - $('#spic').offset().left) - 50;
+				var nowtop = event.pageY - $('#spic').offset().top - 50;
+				console.log(nowleft, nowtop)
+
+				if(nowleft < 0) {
+					nowleft = 0;
+				}
+				if(nowleft > 200) {
+					nowleft = 200;
+				}
+				if(nowtop < 0) {
+					nowtop = 0;
+				}
+				if(nowtop > 200) {
+					nowtop = 200;
+				}
+
+				$('#square').css({
+					'top': nowtop,
+					'left': nowleft
+				})
+				$('#b').css({
+					'top': -nowtop * 3,
+					'left': -nowleft * 3
+				})
+				//				$('#b').css({'display':block})
+			})		
+
+			//商品不大于10
+			function keyup() {
+				var quantity = document.getElementById("quantity").value;
+				if(isNaN(quantity) || parseInt(quantity) != quantity || parseInt(quantity) < 1) {
+					quantity = 1;
+					return;
+				}
+				if(quantity >= 10) {
+					document.getElementById("quantity").value = quantity.substring(0, quantity.length - 1);
+					alert("商品数量不能大于10");
+				}
+			}
+
+			/*商品数量+1*/
+			function numAdd() {
+				var quantity = document.getElementById("quantity").value;
+				var num_add = parseInt(quantity) + 1;
+				var price = document.getElementById("price").value;
+				if(quantity == "") {
+					num_add = 1;
+				}
+				if(num_add >= 10) {
+					document.getElementById("quantity").value = num_add - 1;
+					alert("商品数量不能大于10");
+				} else {
+					document.getElementById("quantity").value = num_add;
+					var Num = price * num_add;
+					document.getElementById("totalPrice").innerHTML = Num.toFixed(2);
+				}
+			}
+			/*商品数量-1*/
+			function numDec() {
+				var quantity = document.getElementById("quantity").value;
+				var price = document.getElementById("price").value;
+				var num_dec = parseInt(quantity) - 1;
+				if(num_dec > 0) {
+					document.getElementById("quantity").value = num_dec;
+					var Num = price * num_dec;
+					document.getElementById("totalPrice").innerHTML = Num.toFixed(2);
+				}
+			}
+			var oE = document.getElementById('e')
+			var odel_col = document.getElementById('del_col')
+			var odel_tips = document.getElementById('del_tips')
+			var odel_story = document.getElementById('del_story')
+			del_story
+			odel_story.onclick = function() {
+				odel_col.style.display = "block"
+				oE.style.display = "none"
+				odel_story.style.borderColor = "turquoise"
+				odel_tips.style.borderColor = "gray"
+			}
+			del_tips.onclick = function() {
+				odel_col.style.display = "none"
+				oE.style.display = "block"
+				odel_tips.style.borderColor = "turquoise"
+				odel_story.style.borderColor = "gray"
+			}
+
+			//回到顶部
+			var obacktop = document.getElementById('backtop')
+			obacktop.onclick = function() {
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+
+</html>

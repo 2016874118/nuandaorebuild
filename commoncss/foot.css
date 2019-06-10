@@ -1,0 +1,122 @@
+#backtop{
+	width: 60px;
+	height: 60px;
+	background: #A9A9A9;
+	float: right;
+	margin-top: 80px;
+	margin-right: 125px;
+	
+}
+#hbottom{
+	width: 100%;
+	height: 265px;
+	background: black;	
+	margin-top: 140px;
+	opacity: 0.8;
+}
+#hbottomC{
+	/*background: yellow;*/
+	height: 265px;
+}
+#hbottoml{
+	width: 668px;
+	height: 190px;
+	padding-top: 40px;
+}
+.hbottonT{
+	width: 167px;
+	height: 38px;
+	color: white;
+	float: left;
+	font-size: 16px;
+	
+}
+#hbottomr{ 
+	width:380px;
+	height: 190px;
+	/*background: greenyellow;*/
+	margin-top: 40px;	
+}
+.hbottonET{
+	width: 330px;
+	height: 44px;
+	/*background: turquoise;*/
+	line-height: 44px;
+	margin-top: 20px;
+}
+#hbottomE{
+	width: 268px;
+	height: 42px;
+	background-color: #A9A9A9;
+	float:left;
+	font-size: 16px;
+	color: grey;
+	border: 1px gainsboro solid;	
+	line-height: 44px;
+	opacity: 0.5;
+}
+#hbottomEI{
+	/*width: 60px;
+	height: 42px;*/
+	background-color: #A9A9A9;
+	font-size: 30px;
+	color: white;
+	border: 1px gainsboro solid;
+	text-align: center;
+	/*float: right;*/
+}
+#hbottomPic{
+	width: 320px;
+	height: 55px;
+	/*background: palegoldenrod;*/
+	margin-top: 30px;
+}
+#htouch{
+	width: 90px;
+	height: 90px;
+	background: turquoise;
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	border-radius: 10px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+}
+#login_root{
+	width: 300px;
+	height: 25px;
+	line-height: 25px;
+	/*margin: 5px 30px;*/
+	/*background: turquoise;*/
+	text-align: center;
+	color: gray;
+	font-size: 14px;
+	margin-left: 10px;
+	padding-top: 15px;
+}
+#login_foot{
+	width: 100%;
+	height: 100px;
+	float: left;
+	background: white;
+	/*position: fixed;
+	bottom: 0;	
+	left: 0;*/
+}
+#login_footl span{
+	width: 900px;
+	height: 100%;
+	/*background: yellow;*/
+    margin-left: 60px;
+}
+#login_footr{
+	width:400px;
+	height: 100%;
+	float: right;
+	/*background: greenyellow;*/
+}
+#login_footr img{
+	margin-top: 20px;
+	margin-left: 20px;
+}

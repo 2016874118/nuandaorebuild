@@ -1,0 +1,92 @@
+
+<header>
+			<section id="topNav" class="t">
+				<section id="navC" class="c">
+					<div id="navLeft" class="l">
+						<div id="nav_logo" class="l">
+							<a href="index.html"><i class="icons" id="logo"></i></a>
+						</div>
+						<div class="l" id="nav_search ">
+							<section id="nav_search1" class="l">
+								
+								<span id="search" class="iconfont l s" style="font-size: 22px;text-align: center;margin-top: 3px;margin-left: 5px;">&#xe6d1;</span>
+								<!--<i id="search" class="l s"></i>-->
+							</section>
+							<input style="text" id="nav_searchbox" placeholder="请输入关键字搜索" class="l"/>
+						</div>
+						<div class="nav_text">每日10点上新&nbsp;&nbsp;&nbsp;&nbsp;满249元包邮</div>
+					</div>
+					<section id="navRight" class="r">
+						<div id="shopping" class="l">							
+							<span class="iconfont" id="Car">&#xf0179;</span>							
+							<span id="shopp">购物车</span>
+							<span id="shop_text">0</span>
+						</div> 
+						<div id="login" class="l"><a href="login.html" style="color: white;">登录</a>|<a href="register.html" style="color: white;">注册</a></div>
+						<div id="notic" class="l">
+							<span class="iconfont" id="weibo">&#xe699;</span>
+							<span id="Not">加关注</span>
+							<span id="cont">24.8万</span>
+						</div>
+					</section>
+				</section>
+			</section>
+			<section id="NavNext" class="t">
+				<section id="Nav1" class="c">
+				<ul id="Nav2" class="l">
+					<li class="btn l" id="t01">大家喜欢</li>
+					<li class="btn l" id="first"><a href="goodsList.html">女装服饰</a>
+						<div id="second">
+							<ul class="l" id="second_l">
+								<li class="sec l">
+			暖岛独家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;买手推荐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本月星座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;booklook
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;岛民最爱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编辑推荐
+								</li>						
+							</ul>
+							<ul class="l" id="second_r">
+								<img src="img/warm/5658570d97e8d-100.jpg" />
+								<img src="img/warm/578dce80deda2-100.jpg" />
+								<img src="img/warm/585cd049c687b-100.jpg" />
+								<img src="img/warm/585cd049c687b-100.jpg" />
+								<img src="img/warm/578dce80deda2-100.jpg" />
+								<img src="img/warm/5658570d97e8d-100.jpg" />
+							</ul>
+						</div>
+					</li>
+					<li class="btn l"><a href="goodsList.html">男装服饰</a></li>
+					<li class="btn l">美容健康</li>
+					<li class="btn l">家居创意</li>
+					<li class="btn l"><a href="goodsKind.html">数码户外</a></li>
+					<li class="btn l" id="t02">限时暖价</li>
+					<li class="btn l"><a href="goodsKind.html">精选品牌</a></li>
+				</ul>
+				<ul id="Nav3" class="r">
+					<span class="iconfont" id="Nav4">&#xe67e;</span>
+					<span class="Nav5">邀请好友立送20元</span>
+					<span class="iconfont" id="Nav6">&#xe623;</span>
+					<span class="Nav5">手机版</span>
+					<span class="iconfont" id="Nav7">&#xe637;</span>
+				</ul>
+				</section>				
+			</section>
+		</header>
+		<script>
+			$(function(){
+				var navTop = $('#NavNext').offset().top;
+				$(document).on('scroll',function(){
+					var scrollTop = $(document).scrollTop();
+					if(scrollTop > navTop){
+						$('#NavNext').css({
+							'position':'fixed',
+							'top':0
+						})
+					}else{
+							$('#NavNext').css({
+							'position':'',
+							'top':''
+						})
+						}
+				})
+			})
+				
+		</script>

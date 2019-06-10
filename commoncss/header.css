@@ -1,0 +1,240 @@
+#topNav {
+	height: 46px;
+	background-color: black;
+}
+
+#navC {
+	height: 46px;
+	/*background-color: yellow;*/
+}
+
+#navLeft {
+	width: 800px;
+	height: 46px;
+}
+
+#navRight {
+	width: 440px;
+	height: 46px;
+}
+
+.icons {
+	width: 100px;
+	height: 38px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	background-image: url(../img/warm/nuandao.png);
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+
+#logo {
+	background-position: -50px -280px;
+}
+
+#nav_search {
+	width: 402px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	background: white;
+	padding: 5px;
+	/*border: 1px solid black;*/
+}
+
+#nav_search1 {
+	width: 38px;
+	height: 38px;
+	background-color: white;
+	float: left;
+	/*border: 1px solid black;*/
+	color: grey;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align: center;
+	line-height: 38px;
+	margin-left: 10px;
+}
+
+.s {
+	width: 13px;
+	height: 13px;
+	/*background-image: url(img/warm/nuandao.png);*/
+	margin-top: 12px;
+	margin-left: 12px;
+	/*display: inline-block;
+			    vertical-align: middle;
+			    background-repeat: no-repeat;*/
+}
+
+#search {
+	background-position: -260px -280px;
+}
+
+#nav_searchbox {
+	width: 360px;
+	height: 35px;
+	/*background-color: orange;*/
+	/*border: 1px solid deepskyblue;*/
+	font-size: 16px;
+	color: grey;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.nav_text {
+	font-size: 16px;
+	text-align: center;
+	color: purple;
+	line-height: 48px;
+}
+
+#shopping {
+	width: 130px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 9px;
+	/*background: hotpink;*/
+	margin-left: 50px;
+}
+
+#shopp {
+	color: white;
+	text-align: center;
+	font-size: 16px;
+}
+
+#Car {
+	width: 30px;
+	height: 30px;
+	background: white;
+	line-height: 30px;
+}
+
+
+/*#shop_text{
+	       	width: 40px;
+	       	height: 30px;
+	       	background: turquoise;
+	       }*/
+
+#weibo {
+	width: 40px;
+	height: 40px;
+	border: 1px solid white;
+	background: white;
+	line-height: 40px;
+}
+
+#login {
+	width: 81px;
+	height: 24px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+	margin-left: 18px;
+	border: 1px solid white;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+
+#notic {
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+#Not {
+	width: 40px;
+	height: 22px;
+	color: black;
+	background: pink;
+	border: 1px solid white;
+	padding: 0;
+}
+
+#cont {
+	width: 40px;
+	height: 40px;
+	color: black;
+	background: white;
+	margin-right: 0;
+}
+
+#NavNext {
+	height: 36px;
+	background: white;
+	border: 1px solid grey;
+	z-index: 999;
+}
+
+#Nav1 {
+	height: 36px;
+	/*background: yellow;*/
+}
+
+.btn {
+	padding: 0 18px;
+	color: black;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+#t01 {
+	color: purple;
+	padding-left: 0;
+}
+
+#t02 {
+	color: purple;
+}
+
+.btn:hover {
+	color: turquoise;
+}
+
+#Nav2 {
+	position: relative;
+}
+
+#second {
+	width: 100%;
+	height: 200px;
+	background: white;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	display: none;
+}
+
+.sec {
+	text-align: center;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+#second_l {
+	margin-left: 40px;
+}
+
+#second_r {
+	margin-left: 40px;
+}
+
+#first:hover #second {
+	display: block;
+	z-index: 2;
+}
+
+#Nav3 {
+	margin-top: 8px;
+}
+
+.Nav5 {
+	font-size: 16px;
+	color: gray;
+}
+ul {
+	list-style: none;
+}
